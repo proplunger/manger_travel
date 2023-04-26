@@ -54,3 +54,27 @@ function acceptform(acceptId){
 .then(data=>{console.log(data)})
 }
 
+const getreturnInfobyId=(x)=>{
+  for(var i=0;i<request.length;i++){
+      if(x == request[i].id){
+          console.log(request[i])
+          return request[i];
+      }
+  }
+}
+
+function returnform(returnId){
+  console.log(returnId);
+  var returnObj= getreturnInfobyId(returnId);
+  console.log(returnObj)
+  console.log("post method");
+  fetch("http://localhost:3000/Returned",
+     {
+      method:'POST',
+      body:JSON.stringify(returnObj),
+      headers:{'Content-type':'application/json'}
+})
+.then(response=>response.json())
+.then(data=>{console.log(data)})
+}
+
