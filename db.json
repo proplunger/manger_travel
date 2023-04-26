@@ -1,0 +1,31 @@
+{
+    "Requests": [
+        {
+            "employee_id": 1,
+            "Name": "Person1",
+            "email": "Person1@email.com",
+            "Expense": 10000,
+            "Location": "xyz"
+        }
+    ],
+
+    "Accepted": [
+        {
+            "employee_id": 2,
+            "Name": "Person2",
+            "email": "Person2@email.com",
+            "Expense": 16900,
+            "Location": "xyzhoih"
+        }
+    ],
+
+    "Rejected": [
+        {
+            "employee_id": 3,
+            "Name": "Person3",
+            "email": "Person3@email.com",
+            "Expense": 169240,
+            "Location": "dwidio woidj"
+        }
+    ]
+}
