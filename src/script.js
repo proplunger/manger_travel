@@ -28,8 +28,16 @@ function getrequesteddata(){
   }
   document.getElementById("pending").innerHTML=showrequest;
 }
+const getrequestInfobyId=(x)=>{
+    for(var i=0;i<request.length;i++){
+        if(x == request[i].id){
+            console.log(request[i])
+            return request[i];
+        }
+    }
+}
 
 function acceptform(acceptId){
     console.log(acceptId);
-    
+    var acceptObj= getrequestInfobyId(acceptId);
 }
